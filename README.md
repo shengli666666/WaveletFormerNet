@@ -1,14 +1,5 @@
 # WaveletFormer: A Transformer-based Wavelet Network for Real-world Non-homogeneous and Dense Fog Removal
 
->__Abstract:__ Although deep convolutional neural networks have achieved remarkable success in removing synthetic fog, it is essential to be able to process images taken in complex foggy conditions, such as dense or non-homogeneous fog, in the real world. However, the haze distribution in the real world is complex, and downsampling can lead to color distortion or loss of detail in the output results as the resolution of a feature map or image resolution decreases. Moreover, the over-stacking of convolutional blocks might increase the model complexity. In addition to the challenges of obtaining sufficient training data, overfitting can also arise in deep learning techniques for foggy image processing, which can limit the generalization abilities of the model, posing challenges for its practical applications in real-world scenarios.
->
->Considering these issues, this paper proposes a Transformer-based wavelet network (WaveletFormerNet) for real-world foggy image recovery.
-We embed the discrete wavelet transform into the Vision Transformer by proposing the WaveletFormer and IWaveletFormer blocks, aiming to alleviate texture detail loss and color distortion in the image due to downsampling. We introduce parallel convolution in the Transformer block, which allows for the capture of multi-frequency information in a lightweight mechanism. Such a structure reduces computational expenses and improves the effectiveness of the network. Additionally, we have implemented a feature aggregation module (FAM) to maintain image resolution and enhance the feature extraction capacity of our model, further contributing to its impressive performance in real-world foggy image recovery tasks.
->
->Through extensive experiments on real-world fog datasets, we have demonstrated that our WaveletFormerNet achieves superior performance compared to state-of-the-art methods, as shown through quantitative and qualitative evaluations of minor model complexity.
->
->Additionally, our satisfactory results on real-world dust removal and application tests showcase the superior generalization ability and improved performance of WaveletFormerNet in computer vision-related applications compared to existing state-of-the-art methods, further confirming our proposed approach's effectiveness and robustness.
-
 >__Highlights:__ We propose the WaveletFormer and IWaveletFormer blocks to alleviate texture detail loss and maintain image resolution, combining the advantages of Vision Transformer and wavelet transform. The parallel convolution in the WaveletFormer and IWaveletFormer blocks captures the multi-frequency information in the lightweight mechanism, decreasing the network computational expenses.
 >
 >The feature aggregation module is proposed to capture the long-range multi-frequency information in the lightweight mechanism and further enhance the feature extraction capability of WaveletFormerNet.
@@ -28,7 +19,7 @@ We embed the discrete wavelet transform into the Vision Transformer by proposing
     * [Comparison on synthetic dataset dehazing]()
     * [Parameters and Runtime Analysis]()
 * [Qualitative Comparisons]()
-    *[Comparisons on the on the natural hazy images and RTTS dataset]()
+    * [Comparisons on the on the natural hazy images and RTTS dataset]()
 * [Generality Analysis for WaveletFormerNet]()
 * [Application Test]()
 * [Ablation Experiments]()
@@ -40,7 +31,7 @@ As we have uploaded a lot of pictures, the page may refresh slowly. Thank you ve
 ### WaveletFormerNet Network
 
 <center>
-    <img src='network/allnetwork.png'>
+    <img src='network/network.png'>
 </center>
 
 (Ⅰ) is the overall structure of the proposed WaveletFormerNet network; WaveletFormerNet is a Swin Transformer block-based wavelet network with encoding and decoding structure for real-world fog removal. (Ⅱ) and (Ⅲ) is the structure of our WaveletFormer block and feature aggregation module (FAM). The WaveletFormer block and the IWaveletFormer block have the same structure: they utilize DWT and IDWT to substitute downsampling and upsampling, respectively.
@@ -129,7 +120,7 @@ As we have uploaded a lot of pictures, the page may refresh slowly. Thank you ve
 
 ### Real world Dust Dataset:
 
-* Dataset: RB-Dust; Paper: [RB-Dust – A Reference-based Dataset for Vision-based Dust Removal](https://arxiv.org/pdf/2306.07244.pdf)(www.agriscapes-dataset.com)
+* Dataset: RB-Dust; Paper: [RB-Dust – A Reference-based Dataset for Vision-based Dust Removal](https://arxiv.org/pdf/2306.07244.pdf) [dataset link](www.agriscapes-dataset.com)
 
 ## Quick Run
 
@@ -238,7 +229,7 @@ We perform a feature point matching test to evaluate the performance of WaveletF
 
 ### Quantitative and Visualization comparison of ablation experiments
 
-|<img src="result/ablation1.png">|<img src="result/ablation2.png">|
+|<img src="results/ablation1.png">|<img src="results/ablation2.png">|
 |:-:|:-:|
 
 ## Citation
