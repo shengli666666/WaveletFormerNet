@@ -6,23 +6,23 @@
 >
 >We present WaveletFormerNet, an end-to-end wavelet reconstruction network guided by frequency information to tackle image dehazing problems under complex, hazy conditions in the real world. To validate the effectiveness of WaveletFormerNet, we conducted extensive experiments on both synthetic and real-world datasets. The results demonstrate that our method yields competitive de-fogging performance in comparison to state-of-the-art methods.
 
-* [Network Architecture]()
-* [Dependencies and Installation]()
-* [Datasets Preparation]()
-    * [Synthetic Fog Dataset]()
-    * [Real-world Fog Datasets]()
-    * [Real world Dust Dataset]()
-* [Quick Run]()
-* [Quantitative comparisons]()
-    * [Comparison of referenced evaluation on real-world dehazing]()
-    * [Comparison of non-referenced evaluation on real-world dehazing]()
-    * [Comparison on synthetic dataset dehazing]()
-    * [Parameters and Runtime Analysis]()
-* [Qualitative Comparisons]()
-    * [Comparisons on the on the natural hazy images and RTTS dataset]()
-* [Generality Analysis for WaveletFormerNet]()
-* [Application Test]()
-* [Ablation Experiments]()
+* [Network Architecture](https://github.com/shengli666666/WaveletFormerNet/tree/main#network-architecture)
+* [Dependencies and Installation](https://github.com/shengli666666/WaveletFormerNet/tree/main#dependencies-and-installation)
+* [Datasets Preparation](https://github.com/shengli666666/WaveletFormerNet/tree/main#datasets-preparation)
+    * [Synthetic Fog Dataset](https://github.com/shengli666666/WaveletFormerNet/tree/main#synthetic-fog-dataset)
+    * [Real-world Fog Datasets](https://github.com/shengli666666/WaveletFormerNet/tree/main#real-world-fog-datasets)
+    * [Real world Dust Dataset](https://github.com/shengli666666/WaveletFormerNet/tree/main#real-world-dust-dataset)
+* [Quick Run](https://github.com/shengli666666/WaveletFormerNet/tree/main#quick-run)
+* [Quantitative comparisons](https://github.com/shengli666666/WaveletFormerNet/tree/main#quantitative-comparisons)
+    * [Comparison of referenced evaluation on real-world dehazing](https://github.com/shengli666666/WaveletFormerNet/tree/main#comparison-of-referenced-evaluation-on-real-world-dehazing)
+    * [Comparison of non-referenced evaluation on real-world dehazing](https://github.com/shengli666666/WaveletFormerNet/tree/main#comparison-of-non-referenced-evaluation-on-real-world-dehazing)
+    * [Comparison on synthetic dataset dehazing](https://github.com/shengli666666/WaveletFormerNet/tree/main#comparison-on-synthetic-dataset-dehazing)
+    * [Parameters and Runtime Analysis](https://github.com/shengli666666/WaveletFormerNet/tree/main#parameters-and-runtime-analysis)
+* [Qualitative Comparisons](https://github.com/shengli666666/WaveletFormerNet/tree/main#qualitative-comparisons)
+    * [Comparisons on the on the natural hazy images and RTTS dataset](https://github.com/shengli666666/WaveletFormerNet/tree/main#comparisons-on-the-on-the-natural-hazy-images-and-rtts-dataset)
+* [Generality Analysis for WaveletFormerNet](https://github.com/shengli666666/WaveletFormerNet/tree/main#generality-analysis-for-waveletformernet)
+* [Application Test](https://github.com/shengli666666/WaveletFormerNet/tree/main#application-test)
+* [Ablation Experiments](https://github.com/shengli666666/WaveletFormerNet/tree/main#ablation-experiments)
 
 ## Network Architecture
 
@@ -130,9 +130,9 @@ Trained_models will be available.
 
 For your quick run, we have selected a small number of hazy images in the `./datasets/hazy` folder.
 
-*Put  models in the `./trained_models/` folder.*
+* Put  models in the `./trained_models/` folder.*
 
-*Trained_models are available at [google drive](https://drive.google.com/drive/folders/1whYayNFJsXgKgErAMeBPSsOfishFkpw_?usp=drive_link) 
+* Trained_models are available at [google drive](https://drive.google.com/drive/folders/1whYayNFJsXgKgErAMeBPSsOfishFkpw_?usp=drive_link) 
 
 To test the pre-trained models of Dense-Haze, Ihaze, Ohaze, and NHHaze on your own images, run:
 ```shell
@@ -143,7 +143,7 @@ Here is an example to perform NH-Haze:
 ```shell
 python test.py --task nhhaze --input_dir datasets/hazy
 ```
-*Check out the test results in the `./dwtformer_nhhaze` folder.*
+* Check out the test results in the `./dwtformer_nhhaze` folder.*
 
 We have put more experimental results  in the `./results/` folder. 
 
@@ -208,7 +208,7 @@ We conduct parameters (# Param), floating-point operations (# FLOPs), and infere
     <img src='results/hazyrtts.png'>
 </center>
     
-More dehazed results are available in the `./results/` folder.
+* More dehazed results are available in the `./results/` folder.
 
 ## Generality Analysis for WaveletFormerNet
 <center>
