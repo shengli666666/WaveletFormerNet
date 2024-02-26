@@ -34,7 +34,7 @@ As we have uploaded a lot of pictures, the page may refresh slowly. Thank you ve
     <img src='network/network.png'>
 </center>
 
-(Ⅰ) is the overall structure of the proposed WaveletFormerNet network; WaveletFormerNet is a Swin Transformer block-based wavelet network with encoding and decoding structure for real-world fog removal. (Ⅱ) and (Ⅲ) is the structure of our WaveletFormer block and feature aggregation module (FAM). The WaveletFormer block and the IWaveletFormer block have the same structure: they utilize DWT and IDWT to substitute downsampling and upsampling, respectively.
+The schematic illustration of the proposed WaveletFormerNet. WaveletFormer block and IWaveletFormer block consist of DWT and IDWT and Transformer block respectively, and IDWT is the reverse process of DWT.
 
 ### WaveletFormer Block and Feature Aggregation Module
 
@@ -234,9 +234,7 @@ We perform a feature point matching test to evaluate the performance of WaveletF
 
 ## Citation
 
-If our work can bring you help, we will be very excited! If you have other questions, please contact the Authors (email: zhangshengli_win@163.com)
-
-We look forward to your valuable suggestions,your comments will make our work better!
+If our work can bring you help, we will be very excited! If you have other questions, please contact the Authors (email: zhangshengli_win@163.com). We look forward to your valuable suggestions, your comments will make our work better!
 
 
 
