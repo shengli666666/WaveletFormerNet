@@ -234,7 +234,7 @@ We perform a feature point matching test to evaluate the performance of WaveletF
 
 ## Citation
 
-If our work can bring you help, we will be very excited! If you have other questions, please contact the Authors (email: zhangshengli_win@163.com). We look forward to your valuable suggestions, your comments will make our work better!
+If our work can bring you help, we will be very excited! If you have other questions, please contact the Authors (e-mail at zhangshengli_win@163.com). We look forward to your valuable suggestions, your comments will make our work better!
 
 
 
